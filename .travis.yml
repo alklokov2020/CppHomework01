@@ -12,5 +12,5 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -T -v helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -alklokov2020:$BINTRAY_API_KEY "https://api.bintray.com/content/alklokov2020/otus-cpp/homework01/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -v -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -alklokov2020:$BINTRAY_API_KEY "https://api.bintray.com/content/alklokov2020/otus-cpp/homework01/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
 
